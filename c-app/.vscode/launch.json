@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "cppdbg",
+        "request": "launch",
+        "name": "Launch gdbclient",
+        "cwd": "${workspaceRoot}",
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerServerAddress": "${config:remote.hostname}:${config:remote.port}",
+        "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+        "linux": {
+          "miDebuggerPath": "${config:toolchain}gdb",
+        }
+      }
+    ]
+  }
